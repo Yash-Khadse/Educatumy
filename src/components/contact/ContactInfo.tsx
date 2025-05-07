@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import React from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactInfo: React.FC = () => {
   return (
@@ -7,7 +7,8 @@ const ContactInfo: React.FC = () => {
       <div>
         <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
         <p className="text-gray-300">
-          Have questions about our educational services? Fill out the form or contact us directly using the information below.
+          Have questions about our educational services? Fill out the form or
+          contact us directly using the information below.
         </p>
       </div>
 
@@ -18,11 +19,18 @@ const ContactInfo: React.FC = () => {
           </div>
           <div>
             <h4 className="font-medium mb-1">Email</h4>
-            <a 
-              href="mailto:info@educatumy.com" 
+            <a
+              href="mailto:educatomy.projects@gmail.com"
               className="text-gray-300 hover:text-primary transition"
             >
-              info@educatumy.com
+              educatomy.projects@gmail.com
+            </a>
+            <br />
+            <a
+              href="mailto:shiva.prasad923@gmail.com"
+              className="text-gray-300 hover:text-primary transition"
+            >
+              shiva.prasad923@gmail.com
             </a>
           </div>
         </div>
@@ -33,11 +41,18 @@ const ContactInfo: React.FC = () => {
           </div>
           <div>
             <h4 className="font-medium mb-1">Phone</h4>
-            <a 
-              href="tel:+15551234567" 
+            <a
+              href="tel:+919502390514 "
               className="text-gray-300 hover:text-primary transition"
             >
-              +1 (555) 123-4567
+              +91 9502390514
+            </a>
+            <br />
+            <a
+              href="tel:+917032021430 "
+              className="text-gray-300 hover:text-primary transition"
+            >
+              +91 7032021430
             </a>
           </div>
         </div>
@@ -49,8 +64,9 @@ const ContactInfo: React.FC = () => {
           <div>
             <h4 className="font-medium mb-1">Address</h4>
             <address className="text-gray-300 not-italic">
-              123 Education Street,<br />
-              Learning City, 10001
+              Serene heights <br /> Dhulapally <br /> Merchal- Malkajgiri <br />{" "}
+              Telangana <br />
+              500043
             </address>
           </div>
         </div>
@@ -59,8 +75,10 @@ const ContactInfo: React.FC = () => {
       <div>
         <h4 className="font-medium mb-3">Hours of Operation</h4>
         <p className="text-gray-300">
-          Monday - Friday: 9am - 6pm<br />
-          Saturday: 10am - 2pm<br />
+          Monday - Friday: 9am - 6pm
+          <br />
+          Saturday: 10am - 2pm
+          <br />
           Sunday: Closed
         </p>
       </div>

@@ -11,7 +11,7 @@ interface FormData {
   phone: string;
   serviceInterest: string;
   message: string;
-}
+} 
 
 const ContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -24,7 +24,7 @@ const ContactForm: React.FC = () => {
     formState: { errors }
   } = useForm<FormData>({
     defaultValues: {
-      serviceInterest: 'Major Projects'
+      serviceInterest: services && services.length > 0 ? services[0].title : ''
     }
   });
 
@@ -141,9 +141,15 @@ const ContactForm: React.FC = () => {
             <option value="">Loading services...</option>
           ) : (
             <>
-              <option value="Major Projects">Major Projects</option>
-              <option value="Mini Projects">Mini Projects</option>
-              <option value="Tutoring">Tutoring</option>
+              {services && services.length > 0 ? (
+                services.map((service) => (
+                  <option key={service.title} value={service.title}>
+                    {service.title}
+                  </option>
+                ))
+              ) : (
+                <option value="">No services available</option>
+              )}
             </>
           )}
         </select>

@@ -14,7 +14,8 @@ const Footer: React.FC = () => {
               <span className="text-lg font-bold">Educatumy</span>
             </Link>
             <p className="text-gray-400 text-sm">
-              Providing high-quality educational services and projects to help you achieve your learning goals.
+              Providing high-quality educational services and projects to help
+              you achieve your learning goals.
             </p>
           </div>
 
@@ -94,16 +95,18 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm">info@educatumy.com</span>
+                <span className="text-gray-400 text-sm">
+                  educatomy.projects@gmail.com
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm">+1 (555) 123-4567</span>
+                <span className="text-gray-400 text-sm">+91 9502390514</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  123 Education Street, Learning City, 10001
+                  Serene heights, Dhulapally, Merchal, Telangana
                 </span>
               </li>
             </ul>
@@ -115,7 +118,7 @@ const Footer: React.FC = () => {
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Educatumy. All rights reserved.
           </p>
-          
+
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a
               href="https://linkedin.com"
