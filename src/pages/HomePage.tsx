@@ -21,8 +21,9 @@ const HomePage: React.FC = () => {
             src="https://res.cloudinary.com/delaezg4a/video/upload/v1746628122/3163534-uhd_3840_2160_30fps_lnx8bo.mp4"
             type="video/mp4"
           />
-          {/* You can replace the src with your own video URL */}
         </video>
+        {/* Dark overlay to reduce brightness */}
+        <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
         <div className="absolute inset-0 z-0">
           {/* <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black"></div>
           <div className="absolute inset-0 bg-grid-pattern opacity-10"></div> */}
@@ -64,7 +65,7 @@ const HomePage: React.FC = () => {
 
               <Link
                 to="/contact"
-                className="btn border border-gray-700 text-white hover:bg-gray-800 rounded-full"
+                className="btn border border-white text-white hover:bg-white hover:text-gray-900 rounded-full"
               >
                 Get in Touch
               </Link>
@@ -176,7 +177,7 @@ const HomePage: React.FC = () => {
               Take the next step in your educational journey with Educatumy. Our
               team of experts is ready to help you succeed.
             </p>
-            <Link to="/contact" className="btn btn-primary rounded-full">
+            <Link to="/contact" className="btn btn-primary hover:bg-purple-800 rounded-full">
               Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

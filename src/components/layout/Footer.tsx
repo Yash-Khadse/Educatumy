@@ -1,6 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Sparkles, Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Instagram,
+  GraduationCap,
+} from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +18,7 @@ const Footer: React.FC = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <Sparkles className="h-6 w-6 text-primary" />
+              <GraduationCap className="h-7 w-7 text-primary" />
               <span className="text-lg font-bold">Educatumy</span>
             </Link>
             <p className="text-gray-400 text-sm">
@@ -96,7 +104,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  educatomy.projects@gmail.com
+                  educatumy@gmail.com
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -106,7 +114,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  Serene heights, Dhulapally, Merchal, Telangana
+                  Serene Heights, Dhulapally, Medchal, Telangana
                 </span>
               </li>
             </ul>
@@ -121,7 +129,7 @@ const Footer: React.FC = () => {
 
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/educatumy-services-814942364/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition"
@@ -130,7 +138,7 @@ const Footer: React.FC = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/educatumy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition"
@@ -139,7 +147,7 @@ const Footer: React.FC = () => {
               <Twitter className="h-5 w-5" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/educatumy/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition"

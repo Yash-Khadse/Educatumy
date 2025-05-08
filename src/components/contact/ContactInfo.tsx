@@ -20,10 +20,10 @@ const ContactInfo: React.FC = () => {
           <div>
             <h4 className="font-medium mb-1">Email</h4>
             <a
-              href="mailto:educatomy.projects@gmail.com"
+              href="mailto:educatumy@gmail.com"
               className="text-gray-300 hover:text-primary transition"
             >
-              educatomy.projects@gmail.com
+              educatumy@gmail.com
             </a>
             <br />
             <a
@@ -64,7 +64,7 @@ const ContactInfo: React.FC = () => {
           <div>
             <h4 className="font-medium mb-1">Address</h4>
             <address className="text-gray-300 not-italic">
-              Serene heights <br /> Dhulapally <br /> Merchal- Malkajgiri <br />{" "}
+              Serene Heights <br /> Dhulapally <br /> Medchal- Malkajgiri <br />{" "}
               Telangana <br />
               500043
             </address>
