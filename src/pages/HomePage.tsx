@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Code, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
+import CustomGallery from '../components/CustomGallery';
 
 const HomePage: React.FC = () => {
   return (
@@ -161,6 +162,8 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <CustomGallery/>
 
       {/* CTA Section */}
       <section className="section bg-gradient-to-r from-primary/20 to-secondary/20">

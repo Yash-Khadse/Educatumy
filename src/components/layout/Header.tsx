@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, GraduationCap } from 'lucide-react'; // <-- Changed Sparkles to GraduationCap
+import { Menu, X } from 'lucide-react'; // <-- Changed Sparkles to GraduationCap
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from'../../../public/LOGO4.png' 
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -18,13 +19,14 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-black/80 backdrop-blur-lg py-3' : 'bg-transparent py-5'
-      }`}
+      } h-20`} // <-- Set a fixed header height
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between h-full">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <GraduationCap className="h-7 w-7 text-primary" /> {/* <-- Changed Sparkles to GraduationCap */}
-          <span className="text-xl font-bold">Educatumy</span>
+        <Link to="/" className="flex items-center gap-2 h-full">
+          <img src={logo} alt="logo" className="h-32 w-32" />
+          {/* <GraduationCap className="h-7 w-7 text-primary" /> 
+          <span className="text-xl font-bold">Educatumy</span> */}
         </Link>
 
         {/* Desktop Navigation */}
