@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "../utils/axiosAuth";
 import { toast, ToastContainer } from "react-toastify";
 
 const AdminPage: React.FC = () => {
