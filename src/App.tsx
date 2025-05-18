@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
+import { Analytics } from "@vercel/analytics/react";
+
 // Layouts
 import MainLayout from './layouts/MainLayout';
 
@@ -19,6 +21,7 @@ function App() {
   return (
     <AuthProvider>
       <AnimatePresence mode="wait">
+        <Analytics />
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
