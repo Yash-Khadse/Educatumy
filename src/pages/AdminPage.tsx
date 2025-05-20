@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "../utils/axiosAuth";
 import { toast, ToastContainer } from "react-toastify";
+import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const AdminPage: React.FC = () => {
   // Service form state
@@ -110,15 +112,31 @@ const AdminPage: React.FC = () => {
     toast.success("Reply sent!");
   };
 
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
+  // Add this function:
+  const handleLogout = () => {
+    logout();
+    navigate("/admin-login");
+  };
+
   return (
     <>
       <ToastContainer position="top-right" />
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-800 py-10 px-2 ">
         <div className="max-w-5xl mx-auto mt-8">
-          <h1 className="text-4xl font-extrabold text-white mb-10 text-center drop-shadow-lg">
-            Admin Panel
-          </h1>
-
+          <div className="flex justify-between items-center mb-10">
+            <h1 className="text-4xl font-extrabold text-white text-center drop-shadow-lg">
+              Admin Panel
+            </h1>
+            <button
+              onClick={handleLogout}
+              className="btn bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-lg shadow transition"
+            >
+              Logout
+            </button>
+          </div>
           {/* Toggle Tabs */}
           <div className="flex justify-center mb-10">
             <div className="inline-flex rounded-lg shadow bg-gray-800">
